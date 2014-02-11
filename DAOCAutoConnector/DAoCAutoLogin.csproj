@@ -7,8 +7,8 @@
     <ProjectGuid>{BE3419AC-1F12-403D-B52C-3BEB2EA83DE5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DAOCAutoConnector</RootNamespace>
-    <AssemblyName>DAOCAutoConnector</AssemblyName>
+    <RootNamespace>DAOCAutoLogin</RootNamespace>
+    <AssemblyName>DAOCAutoLogin</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
