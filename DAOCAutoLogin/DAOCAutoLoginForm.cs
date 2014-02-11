@@ -41,7 +41,7 @@ namespace DAOCAutoConnector
             
             try
             {
-                audioFileReader = new Mp3FileReader(myAssembly.GetManifestResourceStream("DAOCAutoConnector.itsready.mp3"));
+                audioFileReader = new Mp3FileReader(myAssembly.GetManifestResourceStream("DAOCAutoLogin.itsready.mp3"));
                 waveOutDevice.Init(audioFileReader);
             }catch(Exception e){
                 //crappy catching base exception.
@@ -49,6 +49,7 @@ namespace DAOCAutoConnector
                 loudAlertRadioButton.Enabled = false;
                 ToolTip loudAlertDisabledToolTip = new ToolTip();              
                 loudAlertDisabledToolTip.SetToolTip(loudAlertRadioButton, "Loud alert is not available.");
+                
             }
             String gameDllPath = Registry.GetValue(daocRegPath, null, "game.dll").ToString();
             if (gameDllPath != null)

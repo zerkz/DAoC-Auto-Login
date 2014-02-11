@@ -14,7 +14,7 @@ namespace DAOCAutoConnector
         {
             InitializeComponent();
             System.Reflection.Assembly myAssembly = System.Reflection.Assembly.GetExecutingAssembly();
-            logoPictureBox.Image = new Bitmap(myAssembly.GetManifestResourceStream("DAOCAutoConnector.ZDWare_New.png"));
+            logoPictureBox.Image = new Bitmap(myAssembly.GetManifestResourceStream("DAOCAutoLogin.ZDWare_New.png"));
             
         }
 
