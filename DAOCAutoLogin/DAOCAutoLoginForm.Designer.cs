@@ -262,12 +262,12 @@
             // loudAlertRadioButton
             // 
             this.loudAlertRadioButton.AutoSize = true;
-            this.loudAlertRadioButton.Location = new System.Drawing.Point(159, 19);
+            this.loudAlertRadioButton.Location = new System.Drawing.Point(191, 19);
             this.loudAlertRadioButton.Name = "loudAlertRadioButton";
-            this.loudAlertRadioButton.Size = new System.Drawing.Size(103, 17);
+            this.loudAlertRadioButton.Size = new System.Drawing.Size(49, 17);
             this.loudAlertRadioButton.TabIndex = 1;
             this.loudAlertRadioButton.TabStop = true;
-            this.loudAlertRadioButton.Text = "Loud and Vulgar";
+            this.loudAlertRadioButton.Text = "Loud";
             this.loudAlertRadioButton.UseVisualStyleBackColor = true;
             // 
             // windowsAlertRadioButton
@@ -282,7 +282,7 @@
             this.windowsAlertRadioButton.Text = "Windows Beep (Soft)";
             this.windowsAlertRadioButton.UseVisualStyleBackColor = true;
             // 
-            // DAOCConnectorForm
+            // DAOCAutoLoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -292,7 +292,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DAOCConnectorForm";
+            this.Name = "DAOCAutoLoginForm";
             this.Text = "DAOC Auto Connector";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.DAOCConnectorForm_HelpButtonClicked);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DAOCConnectorForm_FormClosing);

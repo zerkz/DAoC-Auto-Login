@@ -151,8 +151,13 @@ namespace DAOCAutoConnector
                 Thread.Sleep(35000);
 
                 Process gameDll = null;
+                int waitForConnectCounter = 0;
                 while (true)
                 {
+                    if (waitForConnectCounter >= 10)
+                    {
+                        break;
+                    }
                     Process[] processes = Process.GetProcessesByName("game.dll");
                     if (processes.Length > 0)
                     {
@@ -162,9 +167,10 @@ namespace DAOCAutoConnector
                         SendKeys.SendWait("{ESCAPE}");
                         break;
                     }
-                    Thread.Sleep(2000);
+                    Thread.Sleep(1000);
+                    waitForConnectCounter++;
                 }     
-                Thread.Sleep(3000);
+                Thread.Sleep(2000);
                 Process[] afterProcesses = Process.GetProcessesByName("game.dll");
                 if (afterProcesses.Length > 0)
                 {                   
